@@ -1,6 +1,6 @@
 enum ConversionType {
-  celsius('Celsius'),
-  fahrenheit('Fahrenheit');
+  celsius('Celsius (°C to °F)'),
+  fahrenheit('Fahrenheit (°F to °C)');
 
   final String label;
   const ConversionType(this.label);

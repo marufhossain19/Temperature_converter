@@ -6,7 +6,7 @@
 ## Output Screens
 
 ### 1. Celsius to Fahrenheit Conversion
-<img src="lib/Output screens/Celcius to Fahrenheit Conversion.png" alt="Celsius to Fahrenheit Conversion" width="360" />
+<img src="lib/Output screens/Celcius to Fahrenheit conversion.png" alt="Celsius to Fahrenheit Conversion" width="360" />
 
 ---
 

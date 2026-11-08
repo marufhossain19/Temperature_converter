@@ -107,6 +107,7 @@ class _TemperatureConverterScreenState
                     children: [
                       // Degrees Input Field
                       Expanded(
+                        flex: 5,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -155,10 +156,11 @@ class _TemperatureConverterScreenState
                           ],
                         ),
                       ),
-                      const SizedBox(width: 16),
+                      const SizedBox(width: 14),
 
                       // Type Dropdown Field
                       Expanded(
+                        flex: 6,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -174,7 +176,7 @@ class _TemperatureConverterScreenState
                             Container(
                               height: 48,
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
+                                  const EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 border:
@@ -193,7 +195,7 @@ class _TemperatureConverterScreenState
                                   isExpanded: true,
                                   icon: const Icon(Icons.arrow_drop_down),
                                   style: const TextStyle(
-                                    fontSize: 14,
+                                    fontSize: 13,
                                     color: Colors.black87,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -201,7 +203,10 @@ class _TemperatureConverterScreenState
                                       .map((ConversionType type) {
                                     return DropdownMenuItem<ConversionType>(
                                       value: type,
-                                      child: Text(type.label),
+                                      child: Text(
+                                        type.label,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
                                     );
                                   }).toList(),
                                   onChanged: (ConversionType? newValue) {
